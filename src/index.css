@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.row{
+    @apply flex flex-wrap px-4 py-8 items-center justify-center
+}
+.btn{
+    @apply px-4 py-2 w-full rounded-lg text-white bg-green-600
+}
+
+.product .btn{
+    transition: transform 1s ,opcity 1s ;
+    transform: translateY(90%);
+    opacity: 0;
+}
+.product:hover .btn{
+    opacity: 1;
+    transform: translateY(0%);
+}
+
+.btnnn{
+    @apply px-4 py-2 w-80 rounded-lg text-white bg-green-600
+}
